@@ -1,0 +1,64 @@
+/* Subscribe.css */
+
+.subscribe-container {
+  background-image: url('../../assets/website/orange-pattern.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 5rem; 
+  background-color: #f3f4f6; 
+  color: white;
+ 
+}
+
+.subscribe-container.dark {
+  background-color: #1f2937; 
+}
+
+.container_inputBox {
+  max-width: 1280px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  backdrop-filter: blur(8px);
+ /* background: linear-gradient(
+  to right,
+  rgba(255, 255, 255, 0.4),
+  rgba(255, 255, 255, 0.2)
+); */
+
+  
+}
+
+.subscribe-content {
+  max-width: 36rem; /* max-w-xl ~ 36rem */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+}
+
+h1 {
+  font-weight: 600; /* font-semibold */
+  font-size: 1.5rem; /* text-2xl */
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.25rem; /* sm:text-4xl */
+    text-align: left;
+  }
+}
+
+.input_box_email[type="text"] {
+  width: 100%;
+  padding: 0.75rem; /* p-3 */
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+}
