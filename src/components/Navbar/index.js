@@ -57,9 +57,9 @@ const Navbar = ({ handleOrderPopup }) => {
         <ul className="menu-list">
           {Menu.map((item) => (
             <li key={item.id}>
-              <a href={item.link} className="menu-link">
+              <p  className="menu-link">
                 {item.name}
-              </a>
+              </p>
             </li>
           ))}
           <li className="dropdown">

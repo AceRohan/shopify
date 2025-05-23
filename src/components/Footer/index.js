@@ -53,7 +53,7 @@ const Footer = () => {
               <ul>
                 {FooterLinks.map((link) => (
                   <li key={link.title}>
-                    <a href={link.link}>{link.title}</a>
+                    <p>{link.title}</p>
                   </li>
                 ))}
               </ul>
@@ -63,7 +63,7 @@ const Footer = () => {
               <ul>
                 {FooterLinks.map((link) => (
                   <li key={link.title}>
-                    <a href={link.link}>{link.title}</a>
+                    <p>{link.title}</p>
                   </li>
                 ))}
               </ul>
@@ -72,9 +72,9 @@ const Footer = () => {
             
             <div className="footer-social-contact">
               <div className="footer-social-icons">
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaFacebook /></a>
-                <a href="#"><FaLinkedin /></a>
+              <FaInstagram />
+                <FaFacebook />
+               <FaLinkedin />
               </div>
               <div className="footer-contact">
                 <div><FaLocationArrow /><span>Dehradun, Uk</span></div>
