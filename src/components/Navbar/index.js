@@ -27,10 +27,10 @@ const Navbar = ({ handleOrderPopup }) => {
       <div className="navbar-top">
         <div className="container navbar-container">
           <div>
-            <a href="#" className="logo">
+            <p className="logo">
               <img src={Logo} alt="Logo" className="logo-img" />
               Shopsy
-            </a>
+            </p>
           </div>
 
           {/* Search bar */}
@@ -63,16 +63,16 @@ const Navbar = ({ handleOrderPopup }) => {
             </li>
           ))}
           <li className="dropdown">
-            <a href="#" className="dropdown-toggle">
+            <p className="dropdown-toggle">
               Trending Products <FaCaretDown className="caret-icon" />
-            </a>
+            </p>
             <div className="dropdown-menu">
               <ul>
                 {DropdownLinks.map((item) => (
                   <li key={item.id}>
-                    <a href={item.link} className="dropdown-item">
+                    <p className="dropdown-item">
                       {item.name}
-                    </a>
+                    </p>
                   </li>
                 ))}
               </ul>
